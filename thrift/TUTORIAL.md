@@ -124,7 +124,7 @@ func (*HelloHandler) Hello(request *hello.HelloRequest) (*hello.HelloResponse, e
 	return resp, nil
 }
 
-func NewHelloHandler() hello.Hello {
+func NewHelloHandler() *HelloHandler {
 	return new(HelloHandler)
 }
 
